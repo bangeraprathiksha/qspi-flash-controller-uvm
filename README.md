@@ -33,22 +33,4 @@ The controller supports APB-based indirect register access and AHB-Lite based ex
 ## Project Status
 Under development.
 
-qspi-flash-controller-uvm/
-│
-├── rtl/
-├── tb/
-│   ├── agents/
-│   │   ├── apb_agent/
-│   │   ├── ahb_agent/
-│   │   └── qspi_agent/
-│   │
-│   ├── env/
-│   ├── sequences/
-│   ├── ral/
-│   ├── flash_model/
-│   ├── scoreboard/
-│   └── tests/
-│
-├── sim/
-├── docs/
-└── README.md
+
