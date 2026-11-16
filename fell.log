@@ -22,7 +22,7 @@ fell.log top.sv
 -picarchive -P /fetools/synopsys/installed_tools/verdi/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
 -fsdb -sverilog -gen_obj top.sv  
                          Chronologic VCS (TM)
-      Version Q-2020.03-SP2-8_Full64 -- Mon Nov 16 15:04:37 2026
+      Version Q-2020.03-SP2-8_Full64 -- Mon Nov 16 15:45:50 2026
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -480,8 +480,11 @@ uvm_pkg, "data_value"
 Starting vcs inline pass...
 
 15 modules and 0 UDP read.
-	However, due to incremental compilation, no re-compilation is necessary.
-( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20261116093436_6140 product \
+recompiling module uvm_custom_install_verdi_recording
+recompiling module QSPI_top
+Both modules done.
+	However, due to incremental compilation, only 2 modules need to be compiled. 
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20261116101549_29957 product \
 )
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
@@ -490,7 +493,7 @@ if [ -x ../simv ]; then chmod a-x ../simv; fi
 g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
 -Wl,-rpath=/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib \
 -L/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib  -Wl,-rpath-link=./ \
-/usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o     _6543_archive_1.so _prev_archive_1.so \
+/usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o     _30356_archive_1.so _prev_archive_1.so \
 _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
 rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
 -luclinative /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
@@ -503,9 +506,9 @@ Running simv -V +v2k -a fell.log
 Command: /fetools/work_area/frontend/Batch_10/PrathikshaPoojary/verification/qspi_flash_controller_uvm/qspi-flash-controller-uvm/./simv -V +v2k -a fell.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 16 15:05 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 16 15:46 2026
 VCS Build Date = Sep 11 2021 20:22:52
-Start run at Nov 16 15:05 2026
+Start run at Nov 16 15:46 2026
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
@@ -530,7 +533,9 @@ UVM-1.2.Synopsys
       (Specify +UVM_NO_RELNOTES to turn off this notice)
 
 UVM_INFO @ 0: reporter [RNTST] Running test qspi_test...
+QSPI_FLASH
 UVM_INFO virtual_sequence.sv(15) @ 0: uvm_test_top.env.v_seqr@@v_seq [VSEQ] Starting QSPI virtual sequence
+ dut SRESETn is active 
 started driver
 UVM_INFO apb_driver.sv(52) @ 45: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=0, pwdata=f
 UVM_INFO apb_driver.sv(58) @ 55: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=0, pwdata=f
@@ -540,6 +545,7 @@ UVM_INFO apb_driver.sv(65) @ 75: uvm_test_top.env.apb_agt.drv [DRV]  received pr
 UVM_INFO apb_driver.sv(77) @ 75: uvm_test_top.env.apb_agt.drv [DRV] no pslverr
 UVM_INFO apb_driver.sv(88) @ 85: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=0, pwdata=f
 started driver
+ dut SRESETn is active 
 UVM_INFO apb_driver.sv(52) @ 95: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=4, pwdata=eb
 UVM_INFO apb_driver.sv(58) @ 105: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=4, pwdata=eb
 UVM_INFO apb_monitor.sv(31) @ 125: uvm_test_top.env.apb_agt.mon [APB_MONITOR] ADDR=4 WRITE=1 WDATA=eb RDATA=0 PSLVERR=0
@@ -552,6 +558,7 @@ UVM_INFO apb_driver.sv(52) @ 145: uvm_test_top.env.apb_agt.drv [DRV] Driving APB
 UVM_INFO apb_driver.sv(58) @ 155: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=c, pwdata=3
 UVM_INFO apb_monitor.sv(31) @ 175: uvm_test_top.env.apb_agt.mon [APB_MONITOR] ADDR=c WRITE=1 WDATA=3 RDATA=0 PSLVERR=0
 UVM_INFO scoreboard.sv(30) @ 175: uvm_test_top.env.scb [SCB] Received APB item: Count=3 Addr=c Write=1 Wdata=3
+ dut SRESETn is active 
 UVM_INFO apb_driver.sv(65) @ 175: uvm_test_top.env.apb_agt.drv [DRV]  received pready = 1
 UVM_INFO apb_driver.sv(77) @ 175: uvm_test_top.env.apb_agt.drv [DRV] no pslverr
 UVM_INFO apb_driver.sv(88) @ 185: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=c, pwdata=3
@@ -657,5 +664,5 @@ $finish at simulation time                  535
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 535
 CPU Time:      0.650 seconds;       Data structure size:   0.7Mb
-Mon Nov 16 15:05:09 2026
-CPU time: 14.910 seconds to compile + .580 seconds to elab + .941 seconds to link + .717 seconds in simulation
+Mon Nov 16 15:46:13 2026
+CPU time: 14.967 seconds to compile + .547 seconds to elab + 1.057 seconds to link + .708 seconds in simulation

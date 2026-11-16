@@ -227,6 +227,7 @@ module QSPI #(
     
     always @(posedge SCLK or negedge SRESETn) begin
         if(!SRESETn) begin
+		$display(" dut SRESETn is active ");
             OPCODE <= 0;
             ADDR_LEN <= 0;
             ADDR <= 0;
@@ -290,6 +291,7 @@ module QSPI #(
                     data_count <= 0;
                 end
                 ST_CS_ASSERT : begin
+		   $display("dut 2nd state should be 1");
                     trans_done <= 0;
                     CSn <= 0;
                     BUSY <= 1;
@@ -364,6 +366,7 @@ module QSPI #(
                     BL <= REM >= BYTES ? BYTES[2:0] : REM[2:0];
                 end
                 ST_CS_DEASSERT : begin
+		
                     LW <= 3;
                     trans_done <= 0;
                     CSn <= 1;

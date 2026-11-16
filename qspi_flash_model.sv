@@ -25,7 +25,9 @@ class qspi_flash_model extends uvm_component;
     	forever begin
 
         	opcode = 8'h00;
+		$display("QSPI_FLASH");
         	wait (vif.csn === 1'b0);
+		$display("[%0t] QSPI_FLASH: CSn became LOW",$time);
         	repeat (8) begin
             	@(posedge vif.sclk);
             	if (vif.csn !== 1'b0)
