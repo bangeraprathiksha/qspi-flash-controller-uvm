@@ -6,7 +6,7 @@ class top_reg_block extends uvm_reg_block;
 
     `uvm_object_utils(top_reg_block)
 
-    rand ENABLE         enable;
+    rand ENABLE         enable_;
     rand OPCODE         opcode;
     rand ADDRESS_LENGTH address_length;
     rand ADDRESS        address;
@@ -26,7 +26,7 @@ class top_reg_block extends uvm_reg_block;
 
     virtual function void build();
 
-        enable         = ENABLE::type_id::create("enable");
+        enable_        = ENABLE::type_id::create("enable");
         opcode         = OPCODE::type_id::create("opcode");
         address_length = ADDRESS_LENGTH::type_id::create("address_length");
         address        = ADDRESS::type_id::create("address");
@@ -38,7 +38,7 @@ class top_reg_block extends uvm_reg_block;
         start          = START::type_id::create("start");
         status         = STATUS::type_id::create("status");
 
-        enable.configure(this);
+        enable_.configure(this);
         opcode.configure(this);
         address_length.configure(this);
         address.configure(this);
@@ -50,7 +50,7 @@ class top_reg_block extends uvm_reg_block;
         start.configure(this);
         status.configure(this);
 
-        enable.build();
+        enable_.build();
         opcode.build();
         address_length.build();
         address.build();
@@ -63,7 +63,7 @@ class top_reg_block extends uvm_reg_block;
         status.build();
 
         default_map = create_map("default_map", 0, 4, UVM_LITTLE_ENDIAN);
-      	default_map.add_reg(enable, 'h00, "WO");
+      	default_map.add_reg(enable_, 'h00, "WO");
       	default_map.add_reg(opcode, 'h04, "WO");
         default_map.add_reg(address_length, 'h0C, "WO");
         default_map.add_reg(address, 'h10, "WO");

@@ -31,6 +31,7 @@ class apb_driver extends uvm_driver #(apb_seq_item);
         vif.drv_cb_apb.pwdata  <= '0;
 
         forever begin
+		$display("started driver");
             seq_item_port.get_next_item(tr);
             drive_transfer(tr);
             seq_item_port.item_done();
@@ -48,14 +49,20 @@ class apb_driver extends uvm_driver #(apb_seq_item);
         vif.drv_cb_apb.paddr   <= tr.paddr;
         vif.drv_cb_apb.pwdata  <= tr.pwdata;
 
-        // access phase
+	`uvm_info("DRV",$sformatf("Driving APB: pwrite=%0d, paddr=%0h, pwdata=%0h",tr.pwrite, tr.paddr,tr.pwdata), UVM_LOW)
+		
+	// access phase
         @(vif.drv_cb_apb);
         vif.drv_cb_apb.penable <= 1'b1;
+
+	`uvm_info("DRV",$sformatf("Driving APB: pwrite=%0d, paddr=%0h, pwdata=%0h",tr.pwrite,tr.paddr,tr.pwdata),UVM_LOW)
 
         // Wait until the transfer completes
         do begin
             @(vif.drv_cb_apb);
         end while (vif.drv_cb_apb.pready !== 1'b1);
+
+	`uvm_info("DRV",$sformatf(" received pready = %0d", vif.drv_cb_apb.pready),UVM_LOW)
 
         // capturing response
       	if(!tr.pwrite)begin
@@ -66,6 +73,8 @@ class apb_driver extends uvm_driver #(apb_seq_item);
         if (tr.pslverr === 1'b1) begin
             `uvm_info("APB_DRV",$sformatf("APB error at address %h", tr.paddr),UVM_MEDIUM)
         end
+	
+	`uvm_info("DRV","no pslverr",UVM_LOW)
 
         // returning to idle
         @(vif.drv_cb_apb);
@@ -76,6 +85,7 @@ class apb_driver extends uvm_driver #(apb_seq_item);
         vif.drv_cb_apb.paddr   <= '0;
         vif.drv_cb_apb.pwdata  <= '0;
 
+	`uvm_info("DRV",$sformatf("Driving APB: pwrite=%0d, paddr=%0h, pwdata=%0h",tr.pwrite,tr.paddr,tr.pwdata),UVM_LOW)
     endtask
 
 endclass

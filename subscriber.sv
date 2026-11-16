@@ -1,14 +1,14 @@
-`uvm_analysis_imp_decl(_apb)
-`uvm_analysis_imp_decl(_ahb)
-`uvm_analysis_imp_decl(_qspi)
+`uvm_analysis_imp_decl(_apb_sub)
+`uvm_analysis_imp_decl(_ahb_sub)
+`uvm_analysis_imp_decl(_qspi_sub)
 
 class subscriber extends uvm_component;
 
   	`uvm_component_utils(subscriber)
 
-  	uvm_analysis_imp_apb  #(apb_seq_item, subscriber) sport_apb;
-  	uvm_analysis_imp_ahb  #(ahb_seq_item, subscriber) sport_ahb;
-  	uvm_analysis_imp_qspi #(qspi_seq_item, subscriber) sport_qspi;
+  	uvm_analysis_imp_apb_sub  #(apb_seq_item, subscriber) sport_apb;
+  	uvm_analysis_imp_ahb_sub  #(ahb_seq_item, subscriber) sport_ahb;
+  	uvm_analysis_imp_qspi_sub #(qspi_seq_item, subscriber) sport_qspi;
 
   	apb_seq_item  apb_cov_item;
   	ahb_seq_item  ahb_cov_item;
@@ -113,17 +113,17 @@ class subscriber extends uvm_component;
     	qspi_cg = new();
   	endfunction
 
-  	function void write_apb(apb_seq_item t);
+  	function void write_apb_sub(apb_seq_item t);
     	apb_cov_item = t;
     	apb_cg.sample();
   	endfunction
 
-  	function void write_ahb(ahb_seq_item t);
+  	function void write_ahb_sub(ahb_seq_item t);
     	ahb_cov_item = t;
     	ahb_cg.sample();
   	endfunction
 
-  	function void write_qspi(qspi_seq_item t);
+  	function void write_qspi_sub(qspi_seq_item t);
     	qspi_cov_item = t;
     	qspi_cg.sample();
  	endfunction

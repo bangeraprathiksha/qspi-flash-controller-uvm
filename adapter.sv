@@ -6,8 +6,8 @@ class top_adapter extends uvm_reg_adapter;
         endfunction
 
         function uvm_sequence_item reg2bus(const ref uvm_reg_bus_op rw);
-                reg_seq_item t;
-                t = reg_seq_item::type_id::create("t");
+                apb_seq_item t;
+                t = apb_seq_item::type_id::create("t");
                 t.paddr = rw.addr;
                 t.pwrite = (rw.kind == UVM_WRITE)? 1'b1:1'b0;
                 if(t.pwrite == 1) t.pwdata = rw.data;
@@ -17,7 +17,7 @@ class top_adapter extends uvm_reg_adapter;
  
 	function void bus2reg(uvm_sequence_item bus_item,ref uvm_reg_bus_op rw);
 
-  		reg_seq_item t;
+  		apb_seq_item t;
   		if (!$cast(t, bus_item))
     			return;
   		rw.addr = t.paddr;

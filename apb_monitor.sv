@@ -21,7 +21,7 @@ class apb_monitor extends uvm_monitor;
         apb_seq_item tr;
         forever begin
             @(posedge vif.pclk);
-          	if (vif.presetn && vif.psel && vif.penable && vif.pready) begin
+          	if( vif.psel && vif.penable && vif.pready) begin
                 tr = apb_seq_item::type_id::create("tr", this);
                 tr.paddr   = vif.paddr;
                 tr.pwrite  = vif.pwrite;

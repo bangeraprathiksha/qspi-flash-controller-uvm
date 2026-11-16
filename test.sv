@@ -14,9 +14,9 @@ class qspi_test extends uvm_test;
   	endfunction
 
   	task run_phase(uvm_phase phase);
-    	qspi_virtual_sequence v_seq;
+    	virtual_sequence v_seq;
     	phase.raise_objection(this);
-    	v_seq = qspi_virtual_sequence::type_id::create("v_seq");
+    	v_seq = virtual_sequence::type_id::create("v_seq");
     	v_seq.start(env.v_seqr);
     	phase.drop_objection(this);
   	endtask

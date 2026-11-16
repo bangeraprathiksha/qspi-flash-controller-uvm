@@ -39,10 +39,10 @@ class ENABLE extends uvm_reg;
         mode    = uvm_reg_field::type_id::create("mode");
         data_tx = uvm_reg_field::type_id::create("data_tx");
         data_rx = uvm_reg_field::type_id::create("data_rx");
-        address_en.configure(this, 1, 3, "WO", 0, 0, 1, 0, 1);
-        mode_en.configure(this, 1, 2, "WO", 0, 0, 1, 0, 1);
-        data_tx_en.configure(this, 1, 1, "WO", 0, 0, 1, 0, 1);
-        data_rx_en.configure(this, 1, 0, "WO", 0, 0, 1, 0, 1);
+        address.configure(this, 1, 3, "WO", 0, 0, 1, 0, 1);
+        mode.configure(this, 1, 2, "WO", 0, 0, 1, 0, 1);
+        data_tx.configure(this, 1, 1, "WO", 0, 0, 1, 0, 1);
+        data_rx.configure(this, 1, 0, "WO", 0, 0, 1, 0, 1);
     endfunction
 
     virtual function void sample(uvm_reg_data_t data, uvm_reg_data_t byte_en, bit is_read, uvm_reg_map map);
@@ -241,7 +241,7 @@ class DUMMY extends uvm_reg;
         coverpoint dummy.get() {
             bins zero       = {0};
             bins low        = {[1:7]};
-            bins medium     = {[8:15]};
+            bins med        = {[8:15]};
             bins high       = {[16:31]};
         }
     endgroup
@@ -283,9 +283,9 @@ class DATA_LENGTH extends uvm_reg;
 
         coverpoint data_length.get() {
             bins zero       = {0};
-            bins small      = {[1:63]};
-            bins medium     = {[64:127]};
-            bins large      = {[128:255]};
+            bins sml        = {[1:63]};
+            bins med        = {[64:127]};
+            bins larg       = {[128:255]};
             bins max_value  = {256};
             bins reserved   = {[257:511]};
         }

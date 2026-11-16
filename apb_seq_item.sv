@@ -10,7 +10,7 @@ class apb_seq_item extends uvm_sequence_item;
 
     logic pready;
     logic pslverr;
-    logic [`DATA_WIDTH-1:0] rdata;
+    logic [`DATA_WIDTH-1:0] prdata;
 
     function new(string name = "apb_seq_item");
         super.new(name);

@@ -1,0 +1,1231 @@
+global coverage_group 0 qspi_pkg::ENABLE::enable_cov __coverage_ENABLE.enable_cov unused_ENABLE_enable_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 1 2
+ 131 /fetools/work_area/frontend/Batch_10/PrathikshaPoojary/verification/qspi_flash_controller_uvm/qspi-flash-controller-uvm/register.sv
+ 133 /fetools/work_area/frontend/Batch_10/PrathikshaPoojary/verification/qspi_flash_controller_uvm/qspi-flash-controller-uvm/subscriber.sv
+ 12 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_5
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+0
+0
+ 13 address.get() 14 0 0 0 0 0 37 ENABLE::qspi_pkg_ENABLE_enable_cov_fn 37 ENABLE::qspi_pkg_ENABLE_enable_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 disabled 15 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 enabled 16 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 10 mode.get() 18 0 0 0 0 0 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_2 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 disabled 19 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 enabled 20 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 13 data_tx.get() 22 0 0 0 0 0 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_3 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 disabled 23 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 enabled 24 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 13 data_rx.get() 26 0 0 0 0 0 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_4 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 disabled 27 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 enabled 28 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 ENABLE::qspi_pkg_ENABLE_enable_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::OPCODE::opcode_cov __coverage_OPCODE.opcode_cov unused_OPCODE_opcode_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 68 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 39 OPCODE::qspi_pkg_OPCODE_opcode_cov_fn_3
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 12 opcode.get() 71 0 0 0 0 0 37 OPCODE::qspi_pkg_OPCODE_opcode_cov_fn 37 OPCODE::qspi_pkg_OPCODE_opcode_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 read 72 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 OPCODE::qspi_pkg_OPCODE_opcode_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 fast_read 73 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 OPCODE::qspi_pkg_OPCODE_opcode_cov_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 quad_read 74 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 OPCODE::qspi_pkg_OPCODE_opcode_cov_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 other 75 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::ADDRESS_LENGTH::address_length_cov __coverage_ADDRESS_LENGTH.address_length_cov unused_ADDRESS_LENGTH_address_length_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 111 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 63 ADDRESS_LENGTH::qspi_pkg_ADDRESS_LENGTH_address_length_cov_fn_6
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 20 address_length.get() 114 0 0 0 0 0 61 ADDRESS_LENGTH::qspi_pkg_ADDRESS_LENGTH_address_length_cov_fn 61 ADDRESS_LENGTH::qspi_pkg_ADDRESS_LENGTH_address_length_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 zero 115 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 63 ADDRESS_LENGTH::qspi_pkg_ADDRESS_LENGTH_address_length_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 short_addr 116 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 63 ADDRESS_LENGTH::qspi_pkg_ADDRESS_LENGTH_address_length_cov_fn_1 0 63 ADDRESS_LENGTH::qspi_pkg_ADDRESS_LENGTH_address_length_cov_fn_2 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 full_addr 117 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 63 ADDRESS_LENGTH::qspi_pkg_ADDRESS_LENGTH_address_length_cov_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 reserved 118 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 63 ADDRESS_LENGTH::qspi_pkg_ADDRESS_LENGTH_address_length_cov_fn_4 0 63 ADDRESS_LENGTH::qspi_pkg_ADDRESS_LENGTH_address_length_cov_fn_5 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::ADDRESS::address_cov __coverage_ADDRESS.address_cov unused_ADDRESS_address_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 154 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 42 ADDRESS::qspi_pkg_ADDRESS_address_cov_fn_6
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 13 address.get() 157 0 0 0 0 0 40 ADDRESS::qspi_pkg_ADDRESS_address_cov_fn 40 ADDRESS::qspi_pkg_ADDRESS_address_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 lower 158 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 ADDRESS::qspi_pkg_ADDRESS_address_cov_fn_0 0 42 ADDRESS::qspi_pkg_ADDRESS_address_cov_fn_1 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 mid 159 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 ADDRESS::qspi_pkg_ADDRESS_address_cov_fn_2 0 42 ADDRESS::qspi_pkg_ADDRESS_address_cov_fn_3 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 high 160 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 42 ADDRESS::qspi_pkg_ADDRESS_address_cov_fn_4 0 42 ADDRESS::qspi_pkg_ADDRESS_address_cov_fn_5 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::MODE::mode_cov __coverage_MODE.mode_cov unused_MODE_mode_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 196 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 33 MODE::qspi_pkg_MODE_mode_cov_fn_3
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 10 mode.get() 199 0 0 0 0 0 31 MODE::qspi_pkg_MODE_mode_cov_fn 31 MODE::qspi_pkg_MODE_mode_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 4 zero 200 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 33 MODE::qspi_pkg_MODE_mode_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 ones 201 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 33 MODE::qspi_pkg_MODE_mode_cov_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 other 202 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 33 MODE::qspi_pkg_MODE_mode_cov_fn_2 0 33 MODE::qspi_pkg_MODE_mode_cov_fn_1 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::DUMMY::dummy_cov __coverage_DUMMY.dummy_cov unused_DUMMY_dummy_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 238 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 36 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn_7
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 11 dummy.get() 241 0 0 0 0 0 34 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn 34 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 zero 242 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 36 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 low 243 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 36 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn_1 0 36 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn_2 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 med 244 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 36 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn_3 0 36 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn_4 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 high 245 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 36 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn_5 0 36 DUMMY::qspi_pkg_DUMMY_dummy_cov_fn_6 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::DATA_LENGTH::data_length_cov __coverage_DATA_LENGTH.data_length_cov unused_DATA_LENGTH_data_length_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 281 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_a
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 17 data_length.get() 284 0 0 0 0 0 52 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn 52 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 6 1 1 0 0 1 1 4 zero 285 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 sml 286 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_1 0 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_2 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 med 287 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_3 0 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_4 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 larg 288 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_5 0 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_6 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 max_value 289 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_7 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 reserved 290 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_8 0 54 DATA_LENGTH::qspi_pkg_DATA_LENGTH_data_length_cov_fn_9 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::LINE_WIDTH::line_width_cov __coverage_LINE_WIDTH.line_width_cov unused_LINE_WIDTH_line_width_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 326 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 51 LINE_WIDTH::qspi_pkg_LINE_WIDTH_line_width_cov_fn_3
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 16 line_width.get() 329 0 0 0 0 0 49 LINE_WIDTH::qspi_pkg_LINE_WIDTH_line_width_cov_fn 49 LINE_WIDTH::qspi_pkg_LINE_WIDTH_line_width_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 11 single_line 330 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 51 LINE_WIDTH::qspi_pkg_LINE_WIDTH_line_width_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 dual_line 331 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 51 LINE_WIDTH::qspi_pkg_LINE_WIDTH_line_width_cov_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 quad_line 332 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 51 LINE_WIDTH::qspi_pkg_LINE_WIDTH_line_width_cov_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 invalid 333 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::DATA::data_cov __coverage_DATA.data_cov unused_DATA_data_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 369 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 33 DATA::qspi_pkg_DATA_data_cov_fn_7
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 10 data.get() 372 0 0 0 0 0 31 DATA::qspi_pkg_DATA_data_cov_fn 31 DATA::qspi_pkg_DATA_data_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 5 1 1 0 0 1 1 4 zero 373 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 33 DATA::qspi_pkg_DATA_data_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 all_ones 374 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 33 DATA::qspi_pkg_DATA_data_cov_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 lower 375 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 33 DATA::qspi_pkg_DATA_data_cov_fn_2 0 33 DATA::qspi_pkg_DATA_data_cov_fn_3 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 middle 376 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 33 DATA::qspi_pkg_DATA_data_cov_fn_4 0 33 DATA::qspi_pkg_DATA_data_cov_fn_5 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 upper 377 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 33 DATA::qspi_pkg_DATA_data_cov_fn_6 0 33 DATA::qspi_pkg_DATA_data_cov_fn_1 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::START::start_cov __coverage_START.start_cov unused_START_start_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 413 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 36 START::qspi_pkg_START_start_cov_fn_2
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+0
+ 11 start.get() 416 0 0 0 0 0 34 START::qspi_pkg_START_start_cov_fn 34 START::qspi_pkg_START_start_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 11 not_started 417 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 36 START::qspi_pkg_START_start_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 started 418 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 36 START::qspi_pkg_START_start_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::STATUS::status_cov __coverage_STATUS.status_cov unused_STATUS_status_cov_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 457 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 39 STATUS::qspi_pkg_STATUS_status_cov_fn_5
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+0
+0
+ 11 error.get() 459 0 0 0 0 0 37 STATUS::qspi_pkg_STATUS_status_cov_fn 37 STATUS::qspi_pkg_STATUS_status_cov_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 no_error 460 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 STATUS::qspi_pkg_STATUS_status_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 error 461 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 STATUS::qspi_pkg_STATUS_status_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 10 busy.get() 463 0 0 0 0 0 39 STATUS::qspi_pkg_STATUS_status_cov_fn_2 39 STATUS::qspi_pkg_STATUS_status_cov_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 idle 464 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 STATUS::qspi_pkg_STATUS_status_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 busy 465 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 STATUS::qspi_pkg_STATUS_status_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 18 tx_fifo_full.get() 467 0 0 0 0 0 39 STATUS::qspi_pkg_STATUS_status_cov_fn_3 39 STATUS::qspi_pkg_STATUS_status_cov_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 not_full 468 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 STATUS::qspi_pkg_STATUS_status_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 full 469 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 STATUS::qspi_pkg_STATUS_status_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 19 rx_fifo_empty.get() 471 0 0 0 0 0 39 STATUS::qspi_pkg_STATUS_status_cov_fn_4 39 STATUS::qspi_pkg_STATUS_status_cov_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 64 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 9 not_empty 472 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 STATUS::qspi_pkg_STATUS_status_cov_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 empty 473 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 39 STATUS::qspi_pkg_STATUS_status_cov_fn_1 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::subscriber::apb_cg __coverage_subscriber.apb_cg unused_subscriber_apb_cg_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 23 1 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_b
+0
+0
+0
+64
+0
+ 0
+
+6
+0
+0
+0
+ 9 pwrite_cp 25 1 0 0 0 0 41 subscriber::qspi_pkg_subscriber_apb_cg_fn 41 subscriber::qspi_pkg_subscriber_apb_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 9 write_bin 26 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 read_bin 27 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 7 psel_cp 29 1 0 0 0 0 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_2 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 0 0 1 1 8 selected 30 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_0 0 0 0 0 0 0 0
+ 0
+
+ 10 penable_cp 32 1 0 0 0 0 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_3 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 setup 33 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 access 34 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_0 0 0 0 0 0 0 0
+ 0
+
+ 8 paddr_cp 36 1 0 0 0 0 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_4 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 8 addr_bin 37 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_5 0 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_6 0 0 0 0 0
+ 0
+
+ 9 pwdata_cp 39 1 0 0 0 0 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_7 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_7 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 zero 40 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 non_zero 41 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_8 0 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_9 0 0 0 0 0
+ 0
+
+ 9 prdata_cp 43 1 0 0 0 0 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_a 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_a 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 zero 44 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 non_zero 45 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_8 0 43 subscriber::qspi_pkg_subscriber_apb_cg_fn_9 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::subscriber::ahb_cg __coverage_subscriber.ahb_cg unused_subscriber_ahb_cg_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 51 1 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_e
+0
+0
+0
+64
+0
+ 0
+
+5
+0
+0
+0
+ 9 htrans_cp 53 1 0 0 0 0 41 subscriber::qspi_pkg_subscriber_ahb_cg_fn 41 subscriber::qspi_pkg_subscriber_ahb_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 idle 54 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 busy 55 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 nonseq 56 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 seq 57 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_3 0 0 0 0 0 0 0
+ 0
+
+ 9 hwrite_cp 59 1 0 0 0 0 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_4 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 8 read_bin 60 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 9 write_bin 61 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_6 0 0 0 0 0 0 0
+ 0
+
+ 8 haddr_cp 63 1 0 0 0 0 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_7 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_7 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 8 addr_bin 64 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_8 0 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_9 0 0 0 0 0
+ 0
+
+ 8 hresp_cp 66 1 0 0 0 0 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_a 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_a 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 okay 67 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 error 68 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_6 0 0 0 0 0 0 0
+ 0
+
+ 9 hrdata_cp 70 1 0 0 0 0 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_b 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_b 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 zero 71 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_8 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 non_zero 72 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_c 0 43 subscriber::qspi_pkg_subscriber_ahb_cg_fn_d 0 0 0 0 0
+ 0
+
+end_coverage_group
+global coverage_group 0 qspi_pkg::subscriber::qspi_cg __coverage_subscriber.qspi_cg unused_subscriber_qspi_cg_loop_label qspi_pkg 0 1 0 0 0  ( 0 
+)
+ 0 78 1 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_7
+0
+0
+0
+64
+0
+ 0
+
+6
+0
+0
+0
+ 6 csn_cp 80 1 0 0 0 0 42 subscriber::qspi_pkg_subscriber_qspi_cg_fn 42 subscriber::qspi_pkg_subscriber_qspi_cg_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 6 active 81 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 inactive 82 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 7 sclk_cp 84 1 0 0 0 0 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_2 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_2 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 3 low 85 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 high 86 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 6 io0_cp 88 1 0 0 0 0 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_3 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 zero 89 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 one 90 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 6 io1_cp 92 1 0 0 0 0 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_4 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 zero 93 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 one 94 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 6 io2_cp 96 1 0 0 0 0 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_5 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_5 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 zero 97 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 one 98 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 6 io3_cp 100 1 0 0 0 0 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_6 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_6 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 zero 101 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 one 102 1 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 44 subscriber::qspi_pkg_subscriber_qspi_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+end_coverage_group
