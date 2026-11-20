@@ -71,6 +71,11 @@ class apb_sequence extends uvm_reg_sequence;
 
         if (reg_model == null)
             `uvm_fatal("RAL", "Register model type mismatch")
+        // Read status register
+        reg_model.status.read(status, rdata);
+        `uvm_info("QSPI_RAL_SEQ",
+                  $sformatf("Status register = %0h", rdata),
+                  UVM_MEDIUM)
 
         // Enable register
         reg_model.enable_.write(status, 4'hF);

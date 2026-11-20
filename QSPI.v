@@ -126,6 +126,8 @@ module QSPI #(
     always @(*) begin
         case(PS)
             ST_IDLE : begin
+		$display("reached st_idle");
+		$display("check start = %0d",START);
                 NS = START ? ST_CS_ASSERT : ST_IDLE;
             end
             ST_CS_ASSERT : begin

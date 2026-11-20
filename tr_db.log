@@ -36,3 +36,11 @@
   CREATE_STREAM @0 {NAME:apb_seq T:Transactions SCOPE:uvm_test_top.env.apb_agt.seqr STREAM:1146}
   CREATE_STREAM @0 {NAME:v_seq T:Transactions SCOPE:uvm_test_top.env.v_seqr STREAM:1129}
   CREATE_STREAM @0 {NAME:apb_seq T:Transactions SCOPE:uvm_test_top.env.apb_agt.seqr STREAM:1146}
+  CREATE_STREAM @0 {NAME:v_seq T:Transactions SCOPE:uvm_test_top.env.v_seqr STREAM:1129}
+  CREATE_STREAM @0 {NAME:apb_seq T:Transactions SCOPE:uvm_test_top.env.apb_agt.seqr STREAM:1146}
+  CREATE_STREAM @0 {NAME:v_seq T:Transactions SCOPE:uvm_test_top.env.v_seqr STREAM:1129}
+  CREATE_STREAM @0 {NAME:apb_seq T:Transactions SCOPE:uvm_test_top.env.apb_agt.seqr STREAM:1146}
+  CREATE_STREAM @0 {NAME:v_seq T:Transactions SCOPE:uvm_test_top.env.v_seqr STREAM:1129}
+  CREATE_STREAM @0 {NAME:apb_seq T:Transactions SCOPE:uvm_test_top.env.apb_agt.seqr STREAM:1146}
+  CREATE_STREAM @0 {NAME:v_seq T:Transactions SCOPE:uvm_test_top.env.v_seqr STREAM:1129}
+  CREATE_STREAM @0 {NAME:apb_seq T:Transactions SCOPE:uvm_test_top.env.apb_agt.seqr STREAM:1146}

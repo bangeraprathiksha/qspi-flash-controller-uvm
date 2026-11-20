@@ -663,10 +663,15 @@ fell.log
 uvm-1.2
 /fetools/synopsys/installed_tools/verdi/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab
 top.sv
-41
-XDG_SESSION_ID=105607
+57
+XDG_SESSION_ID=77222
 XDG_RUNTIME_DIR=/run/user/6091
-XDG_DATA_DIRS=/home/prathikshapoojary/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_MENU_PREFIX=xfce-
+XDG_DATA_DIRS=/home/prathikshapoojary/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/usr/share
+XDG_CURRENT_DESKTOP=XFCE
+XDG_CONFIG_DIRS=/etc/xdg
+VTE_VERSION=5204
+VNCDESKTOP=feserver.mirafra.com:12 (prathikshapoojary)
 VMR_MODE_FLAG=64
 VERDI_HOME=/fetools/synopsys/installed_tools/verdi/verdi/Q-2020.03-SP2-8
 VENDOR=unknown
@@ -681,15 +686,17 @@ VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64
-SSH_TTY=/dev/pts/512
-SSH_CONNECTION=103.157.238.70 59504 192.168.1.16 22
-SSH_CLIENT=103.157.238.70 59504 22
+SSH_TTY=/dev/pts/317
+SSH_CONNECTION=202.83.17.88 54921 192.168.1.16 22
+SSH_CLIENT=202.83.17.88 54921 22
+SSH_AUTH_SOCK=/tmp/ssh-kWZKN1zixSGm/agent.168182
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=168183
 SPYGLASS_HOME=/fetools/synopsys/installed_tools/spyglass/S-2021.09-SP1/SPYGLASS_HOME
 SNPSLMD_QUEUE=true
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/168170,unix/unix:/tmp/.ICE-unix/168170
 SCRNAME=vcs
 SCRIPT_NAME=vcs
-REMOTEHOST=103.157.238.70
 QT_GRAPHICSSYSTEM_CHECKED=1
 QTLIB=/usr/lib64/qt-3.3/lib
 QTINC=/usr/lib64/qt-3.3/include
@@ -697,21 +704,30 @@ QTDIR=/usr/lib64/qt-3.3
 Prime_HOME=/fetools/synopsys/installed_tools/primetime/prime/S-2021.06-SP2
 OVA_UUM=0
 OSTYPE=linux
+MTI_HOME=/tools/mentor/questasim/questasim/
+MGLS_HOME=/tools/mentor/questasim/questasim/linux/mgls
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
 ICC_HOME=/fetools/synopsys/installed_tools/icc2/Q-2019.12-SP1
 HOSTTYPE=x86_64-linux
+HOME_0IN=/tools/mentor/questacdc/linux
 HISTCONTROL=ignoredups
 GROUP=prathikshapoojary
+GLADE_PIXMAP_PATH=:
+GLADE_MODULE_PATH=:
+GLADE_CATALOG_PATH=:
 FORMALITY=/fetools/synopsys/installed_tools/Formality/fm/S-2021.06-SP2
+DESKTOP_SESSION=xfce
 DC_HOME=/fetools/synopsys/installed_tools/syn/S-2021.06-SP4
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-TSnNVqXGKv,guid=f5da875b71e3f89f2f76d8046a7ae923
+COLORTERM=truecolor
 0
 208
 1794474450 sync_ff2.v
 1794468075 async_fifo.v
 1794467824 XIP_Prefetch.v
-1794823919 QSPI_Arbiter.v
-1794824146 QSPI.v
+1794825233 QSPI_Arbiter.v
+1795157119 QSPI.v
 1794466763 CLOCK_DIV.v
 1794466538 AHB_Slave.v
 1794466698 APB_Slave.v
@@ -733,7 +749,7 @@ DC_HOME=/fetools/synopsys/installed_tools/syn/S-2021.06-SP4
 1794821414 apb_driver.sv
 1794818383 virtual_sequence.sv
 1793617030 ahb_sequence.sv
-1794478627 apb_sequence.sv
+1794826090 apb_sequence.sv
 1794478983 virtual_sequencer.sv
 1793616753 ahb_sequencer.sv
 1793616732 apb_sequencer.sv
@@ -741,12 +757,12 @@ DC_HOME=/fetools/synopsys/installed_tools/syn/S-2021.06-SP4
 1794478286 ahb_seq_item.sv
 1794478004 apb_seq_item.sv
 1794478354 top_reg_block.sv
-1794477848 register.sv
+1794826876 register.sv
 1794477603 qspi_pkg.sv
 1793616699 qspi_intf.sv
 1794478124 ahb_intf.sv
 1794477960 apb_intf.sv
-1794822888 defines.svh
+1794825765 defines.svh
 1631418288 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/verdi/uvm_verdi_pli.svh
 1630405584 /fetools/synopsys/installed_tools/verdi/verdi/Q-2020.03-SP2-8/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh
 1631418288 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/verdi/uvm_verdi_reg_recording.sv
@@ -922,5 +938,5 @@ DC_HOME=/fetools/synopsys/installed_tools/syn/S-2021.06-SP4
 1631416743 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so
 1631416702 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so
 1631416739 /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so
-1794824173 simv.daidir
+1795157184 simv.daidir
 -1 partitionlib

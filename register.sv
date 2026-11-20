@@ -486,10 +486,10 @@ class STATUS extends uvm_reg;
         tx_fifo_full  = uvm_reg_field::type_id::create("tx_fifo_full");
         rx_fifo_empty = uvm_reg_field::type_id::create("rx_fifo_empty");
 
-      	error.configure(this, 1, 3, "RO", 0, 0, 1, 0, 1);
-      	busy.configure(this, 1, 2, "RO", 0, 0, 1, 0, 1);
-      	tx_fifo_full.configure(this, 1, 1, "RO", 0, 0, 1, 0, 1);
-      	rx_fifo_empty.configure(this, 1, 0, "RO", 0, 0, 1, 0, 1);
+      	error.configure(this, 1, 0, "RO", 0, 0, 1, 0, 1);
+      	busy.configure(this, 1, 1, "RO", 0, 0, 1, 0, 1);
+      	tx_fifo_full.configure(this, 1, 2, "RO", 0, 0, 1, 0, 1);
+      	rx_fifo_empty.configure(this, 1, 3, "RO", 0, 0, 1, 0, 1);
 
     endfunction
 
