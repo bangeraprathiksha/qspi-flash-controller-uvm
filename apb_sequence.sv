@@ -78,7 +78,8 @@ class apb_sequence extends uvm_reg_sequence;
                   UVM_MEDIUM)
 
         // Enable register
-        reg_model.enable_.write(status, 4'hF);
+        //reg_model.enable_.write(status, 4'hF);
+	reg_model.enable_.write(status, 4'hD);
 
         // Opcode register
         reg_model.opcode.write(status, 8'hEB);

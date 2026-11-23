@@ -22,7 +22,7 @@ fell.log top.sv
 -picarchive -P /fetools/synopsys/installed_tools/verdi/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
 -fsdb -sverilog -gen_obj top.sv  
                          Chronologic VCS (TM)
-      Version Q-2020.03-SP2-8_Full64 -- Mon Nov 23 12:18:18 2026
+      Version Q-2020.03-SP2-8_Full64 -- Mon Nov 23 15:01:01 2026
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -480,11 +480,9 @@ uvm_pkg, "data_value"
 Starting vcs inline pass...
 
 13 modules and 0 UDP read.
-recompiling package vcs_paramclassrepository
-recompiling package qspi_pkg
-Both modules done.
-	However, due to incremental compilation, only 2 modules need to be compiled. 
-( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20261123064817_200699 product \
+recompiling module uvm_custom_install_verdi_recording
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20261123093100_171247 product \
 )
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
@@ -493,7 +491,7 @@ if [ -x ../simv ]; then chmod a-x ../simv; fi
 g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
 -Wl,-rpath=/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib \
 -L/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib  -Wl,-rpath-link=./ \
-/usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o     _201134_archive_1.so _prev_archive_1.so \
+/usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o     _171683_archive_1.so _prev_archive_1.so \
 _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
 rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
 -luclinative /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
@@ -506,9 +504,9 @@ Running simv -V +v2k -a fell.log
 Command: /fetools/work_area/frontend/Batch_10/PrathikshaPoojary/verification/qspi_flash_controller_uvm/qspi-flash-controller-uvm/./simv -V +v2k -a fell.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 23 12:18 2026
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Nov 23 15:01 2026
 VCS Build Date = Sep 11 2021 20:22:52
-Start run at Nov 23 12:18 2026
+Start run at Nov 23 15:01 2026
 
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
 ----------------------------------------------------------------
@@ -550,13 +548,13 @@ UVM_INFO apb_driver.sv(88) @ 85: uvm_test_top.env.apb_agt.drv [DRV] Driving APB:
 started driver
 UVM_INFO apb_sequence.sv(76) @ 85: uvm_test_top.env.apb_agt.seqr@@apb_seq [QSPI_RAL_SEQ] Status register = 1
  dut SRESETn is active 
-UVM_INFO apb_driver.sv(52) @ 95: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=0, pwdata=f
-UVM_INFO apb_driver.sv(58) @ 105: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=0, pwdata=f
-UVM_INFO apb_monitor.sv(31) @ 125: uvm_test_top.env.apb_agt.mon [APB_MONITOR] ADDR=0 WRITE=1 WDATA=f RDATA=1 PSLVERR=0
-UVM_INFO scoreboard.sv(30) @ 125: uvm_test_top.env.scb [SCB] Received APB item: Count=2 Addr=0 Write=1 Wdata=f
+UVM_INFO apb_driver.sv(52) @ 95: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=0, pwdata=d
+UVM_INFO apb_driver.sv(58) @ 105: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=0, pwdata=d
+UVM_INFO apb_monitor.sv(31) @ 125: uvm_test_top.env.apb_agt.mon [APB_MONITOR] ADDR=0 WRITE=1 WDATA=d RDATA=1 PSLVERR=0
+UVM_INFO scoreboard.sv(30) @ 125: uvm_test_top.env.scb [SCB] Received APB item: Count=2 Addr=0 Write=1 Wdata=d
 UVM_INFO apb_driver.sv(65) @ 125: uvm_test_top.env.apb_agt.drv [DRV]  received pready = 1
 UVM_INFO apb_driver.sv(77) @ 125: uvm_test_top.env.apb_agt.drv [DRV] no pslverr
-UVM_INFO apb_driver.sv(88) @ 135: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=0, pwdata=f
+UVM_INFO apb_driver.sv(88) @ 135: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=0, pwdata=d
 started driver
 UVM_INFO apb_driver.sv(52) @ 145: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=4, pwdata=eb
 UVM_INFO apb_driver.sv(58) @ 155: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=1, paddr=4, pwdata=eb
@@ -767,125 +765,105 @@ UVM_INFO qspi_monitor.sv(32) @ 3175: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR
 UVM_INFO scoreboard.sv(50) @ 3175: uvm_test_top.env.scb [SCB] Received QSPI item: Count=19 CSn=0 SCLK=1
 [3175] TB: qspi_if.sclk = 1, csn = 0
 [3215] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=3215 | START=0 | PS=5 | NS=6 | SRESETn=1
+SLCK= 1 TIME=3215 | START=0 | PS=5 | NS=7 | SRESETn=1
 UVM_INFO qspi_monitor.sv(32) @ 3255: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=zzzz
 UVM_INFO scoreboard.sv(50) @ 3255: uvm_test_top.env.scb [SCB] Received QSPI item: Count=20 CSn=0 SCLK=1
 waiting for dummy
 UVM_INFO qspi_flash_model.sv(62) @ 3255: uvm_test_top.env.flash_model [QSPI_FLASH] Read data = 0xf882550d
 [3255] TB: qspi_if.sclk = 1, csn = 0
 [3295] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=3295 | START=0 | PS=6 | NS=11 | SRESETn=1
+SLCK= 1 TIME=3295 | START=0 | PS=7 | NS=11 | SRESETn=1
 SLCK= 1 TIME=3375 | START=0 | PS=11 | NS=11 | SRESETn=1
 SLCK= 1 TIME=3455 | START=0 | PS=11 | NS=10 | SRESETn=1
 SLCK= 1 TIME=3535 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 3575: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=0000
+UVM_INFO qspi_monitor.sv(32) @ 3575: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=1111
 UVM_INFO scoreboard.sv(50) @ 3575: uvm_test_top.env.scb [SCB] Received QSPI item: Count=21 CSn=0 SCLK=1
+[3575] FLASH nibble sampled = f
 [3575] TB: qspi_if.sclk = 1, csn = 0
 [3615] TB: qspi_if.sclk = 0, csn = 0
 SLCK= 1 TIME=3615 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 3655: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=xxxx
+UVM_INFO qspi_monitor.sv(32) @ 3655: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=1000
 UVM_INFO scoreboard.sv(50) @ 3655: uvm_test_top.env.scb [SCB] Received QSPI item: Count=22 CSn=0 SCLK=1
+[3655] FLASH nibble sampled = 8
 [3655] TB: qspi_if.sclk = 1, csn = 0
 [3695] TB: qspi_if.sclk = 0, csn = 0
 SLCK= 1 TIME=3695 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 3735: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=x000
+UVM_INFO qspi_monitor.sv(32) @ 3735: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=1000
 UVM_INFO scoreboard.sv(50) @ 3735: uvm_test_top.env.scb [SCB] Received QSPI item: Count=23 CSn=0 SCLK=1
+[3735] FLASH nibble sampled = 8
 [3735] TB: qspi_if.sclk = 1, csn = 0
 [3775] TB: qspi_if.sclk = 0, csn = 0
 SLCK= 1 TIME=3775 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 3815: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=x000
+UVM_INFO qspi_monitor.sv(32) @ 3815: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=0010
 UVM_INFO scoreboard.sv(50) @ 3815: uvm_test_top.env.scb [SCB] Received QSPI item: Count=24 CSn=0 SCLK=1
+[3815] FLASH nibble sampled = 2
 [3815] TB: qspi_if.sclk = 1, csn = 0
 [3855] TB: qspi_if.sclk = 0, csn = 0
 SLCK= 1 TIME=3855 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 3895: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=00x0
+UVM_INFO qspi_monitor.sv(32) @ 3895: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=0101
 UVM_INFO scoreboard.sv(50) @ 3895: uvm_test_top.env.scb [SCB] Received QSPI item: Count=25 CSn=0 SCLK=1
+[3895] FLASH nibble sampled = 5
 [3895] TB: qspi_if.sclk = 1, csn = 0
 [3935] TB: qspi_if.sclk = 0, csn = 0
 SLCK= 1 TIME=3935 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 3975: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=0x0x
+UVM_INFO qspi_monitor.sv(32) @ 3975: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=0101
 UVM_INFO scoreboard.sv(50) @ 3975: uvm_test_top.env.scb [SCB] Received QSPI item: Count=26 CSn=0 SCLK=1
+[3975] FLASH nibble sampled = 5
 [3975] TB: qspi_if.sclk = 1, csn = 0
 [4015] TB: qspi_if.sclk = 0, csn = 0
 SLCK= 1 TIME=4015 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 4055: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=0x0x
+UVM_INFO qspi_monitor.sv(32) @ 4055: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=0000
 UVM_INFO scoreboard.sv(50) @ 4055: uvm_test_top.env.scb [SCB] Received QSPI item: Count=27 CSn=0 SCLK=1
+[4055] FLASH nibble sampled = 0
 [4055] TB: qspi_if.sclk = 1, csn = 0
 [4095] TB: qspi_if.sclk = 0, csn = 0
 SLCK= 1 TIME=4095 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 4135: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=0000
+UVM_INFO qspi_monitor.sv(32) @ 4135: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=1101
 UVM_INFO scoreboard.sv(50) @ 4135: uvm_test_top.env.scb [SCB] Received QSPI item: Count=28 CSn=0 SCLK=1
-done -model
+[4135] FLASH nibble sampled = d
 [4135] TB: qspi_if.sclk = 1, csn = 0
+done -model
 [4175] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=4175 | START=0 | PS=10 | NS=6 | SRESETn=1
-SLCK= 1 TIME=4255 | START=0 | PS=6 | NS=7 | SRESETn=1
-SLCK= 1 TIME=4335 | START=0 | PS=7 | NS=11 | SRESETn=1
-SLCK= 1 TIME=4415 | START=0 | PS=11 | NS=11 | SRESETn=1
-SLCK= 1 TIME=4495 | START=0 | PS=11 | NS=10 | SRESETn=1
-SLCK= 1 TIME=4575 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 4615: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=zzzz
-UVM_INFO scoreboard.sv(50) @ 4615: uvm_test_top.env.scb [SCB] Received QSPI item: Count=29 CSn=0 SCLK=1
-[4615] TB: qspi_if.sclk = 1, csn = 0
-[4655] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=4655 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 4695: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=zzzz
-UVM_INFO scoreboard.sv(50) @ 4695: uvm_test_top.env.scb [SCB] Received QSPI item: Count=30 CSn=0 SCLK=1
-[4695] TB: qspi_if.sclk = 1, csn = 0
-[4735] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=4735 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 4775: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=zzzz
-UVM_INFO scoreboard.sv(50) @ 4775: uvm_test_top.env.scb [SCB] Received QSPI item: Count=31 CSn=0 SCLK=1
-[4775] TB: qspi_if.sclk = 1, csn = 0
-[4815] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=4815 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 4855: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=zzzz
-UVM_INFO scoreboard.sv(50) @ 4855: uvm_test_top.env.scb [SCB] Received QSPI item: Count=32 CSn=0 SCLK=1
-[4855] TB: qspi_if.sclk = 1, csn = 0
-[4895] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=4895 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 4935: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=zzzz
-UVM_INFO scoreboard.sv(50) @ 4935: uvm_test_top.env.scb [SCB] Received QSPI item: Count=33 CSn=0 SCLK=1
-[4935] TB: qspi_if.sclk = 1, csn = 0
-[4975] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=4975 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 5015: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=zzzz
-UVM_INFO scoreboard.sv(50) @ 5015: uvm_test_top.env.scb [SCB] Received QSPI item: Count=34 CSn=0 SCLK=1
-[5015] TB: qspi_if.sclk = 1, csn = 0
-[5055] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=5055 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 5095: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=zzzz
-UVM_INFO scoreboard.sv(50) @ 5095: uvm_test_top.env.scb [SCB] Received QSPI item: Count=35 CSn=0 SCLK=1
-[5095] TB: qspi_if.sclk = 1, csn = 0
-[5135] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=5135 | START=0 | PS=10 | NS=10 | SRESETn=1
-UVM_INFO qspi_monitor.sv(32) @ 5175: uvm_test_top.env.qspi_agt.mon [QSPI_MONITOR] SCLK=1 CPOL=0 CPHA=0 CSN=0 IO[3:0]=zzzz
-UVM_INFO scoreboard.sv(50) @ 5175: uvm_test_top.env.scb [SCB] Received QSPI item: Count=36 CSn=0 SCLK=1
-[5175] TB: qspi_if.sclk = 1, csn = 0
-[5215] TB: qspi_if.sclk = 0, csn = 0
-SLCK= 1 TIME=5215 | START=0 | PS=10 | NS=12 | SRESETn=1
-SLCK= 1 TIME=5295 | START=0 | PS=12 | NS=7 | SRESETn=1
-SLCK= 1 TIME=5375 | START=0 | PS=7 | NS=8 | SRESETn=1
-SLCK= 1 TIME=5455 | START=0 | PS=8 | NS=8 | SRESETn=1
+SLCK= 1 TIME=4175 | START=0 | PS=10 | NS=12 | SRESETn=1
+SLCK= 1 TIME=4255 | START=0 | PS=12 | NS=7 | SRESETn=1
+SLCK= 1 TIME=4335 | START=0 | PS=7 | NS=8 | SRESETn=1
+SLCK= 1 TIME=4415 | START=0 | PS=8 | NS=8 | SRESETn=1
 QSPI_FLASH
-SLCK= 1 TIME=5535 | START=0 | PS=8 | NS=8 | SRESETn=1
+SLCK= 1 TIME=4495 | START=0 | PS=8 | NS=8 | SRESETn=1
+SLCK= 1 TIME=4575 | START=0 | PS=8 | NS=8 | SRESETn=1
+SLCK= 1 TIME=4655 | START=0 | PS=8 | NS=8 | SRESETn=1
+SLCK= 1 TIME=4735 | START=0 | PS=8 | NS=8 | SRESETn=1
+SLCK= 1 TIME=4815 | START=0 | PS=8 | NS=9 | SRESETn=1
+SLCK= 1 TIME=4895 | START=0 | PS=9 | NS=0 | SRESETn=1
+reached st_idle
+check start = 0
+SLCK= 1 TIME=4975 | START=0 | PS=0 | NS=0 | SRESETn=1
+reached st_idle
+check start = 0
+SLCK= 1 TIME=5055 | START=0 | PS=0 | NS=0 | SRESETn=1
+SLCK= 1 TIME=5135 | START=0 | PS=0 | NS=0 | SRESETn=1
+SLCK= 1 TIME=5215 | START=0 | PS=0 | NS=0 | SRESETn=1
+SLCK= 1 TIME=5295 | START=0 | PS=0 | NS=0 | SRESETn=1
+SLCK= 1 TIME=5375 | START=0 | PS=0 | NS=0 | SRESETn=1
+SLCK= 1 TIME=5455 | START=0 | PS=0 | NS=0 | SRESETn=1
+SLCK= 1 TIME=5535 | START=0 | PS=0 | NS=0 | SRESETn=1
 UVM_INFO apb_driver.sv(52) @ 5535: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=0, paddr=6f, pwdata=0
 UVM_INFO apb_driver.sv(58) @ 5545: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=0, paddr=6f, pwdata=0
-UVM_INFO apb_monitor.sv(31) @ 5565: uvm_test_top.env.apb_agt.mon [APB_MONITOR] ADDR=6f WRITE=0 WDATA=0 RDATA=4 PSLVERR=0
+UVM_INFO apb_monitor.sv(31) @ 5565: uvm_test_top.env.apb_agt.mon [APB_MONITOR] ADDR=6f WRITE=0 WDATA=0 RDATA=0 PSLVERR=0
 UVM_INFO scoreboard.sv(30) @ 5565: uvm_test_top.env.scb [SCB] Received APB item: Count=11 Addr=6f Write=0 Wdata=0
 UVM_INFO apb_driver.sv(65) @ 5565: uvm_test_top.env.apb_agt.drv [DRV]  received pready = 1
 UVM_INFO apb_driver.sv(77) @ 5565: uvm_test_top.env.apb_agt.drv [DRV] no pslverr
 UVM_INFO apb_driver.sv(88) @ 5575: uvm_test_top.env.apb_agt.drv [DRV] Driving APB: pwrite=0, paddr=6f, pwdata=0
 started driver
-UVM_INFO apb_sequence.sv(115) @ 5575: uvm_test_top.env.apb_agt.seqr@@apb_seq [QSPI_RAL_SEQ] Status register = 4
+UVM_INFO apb_sequence.sv(116) @ 5575: uvm_test_top.env.apb_agt.seqr@@apb_seq [QSPI_RAL_SEQ] Status register = 0
 UVM_INFO virtual_sequence.sv(26) @ 5575: uvm_test_top.env.v_seqr@@v_seq [VSEQ] QSPI virtual sequence completed
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 5575: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-UVM_INFO subscriber.sv(142) @ 5575: uvm_test_top.env.s [COVERAGE] APB Coverage  = 50.65%
+UVM_INFO subscriber.sv(142) @ 5575: uvm_test_top.env.s [COVERAGE] APB Coverage  = 58.98%
 UVM_INFO subscriber.sv(143) @ 5575: uvm_test_top.env.s [COVERAGE] AHB Coverage  = 0.00%
 UVM_INFO subscriber.sv(144) @ 5575: uvm_test_top.env.s [COVERAGE] QSPI Coverage = 83.33%
 UVM_INFO scoreboard.sv(59) @ 5575: uvm_test_top.env.scb [SCB] APB items received  = 11
 UVM_INFO scoreboard.sv(62) @ 5575: uvm_test_top.env.scb [SCB] AHB items received  = 0
-UVM_INFO scoreboard.sv(65) @ 5575: uvm_test_top.env.scb [SCB] QSPI items received = 36
+UVM_INFO scoreboard.sv(65) @ 5575: uvm_test_top.env.scb [SCB] QSPI items received = 28
 UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 5575: reporter [UVM/REPORT/CATCHER] 
 --- UVM Report catcher Summary ---
 
@@ -901,7 +879,7 @@ UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/b
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :  165
+UVM_INFO :  149
 UVM_WARNING :    0
 UVM_ERROR :    0
 UVM_FATAL :    0
@@ -910,10 +888,10 @@ UVM_FATAL :    0
 [COVERAGE]     3
 [DRV]    55
 [QSPI_FLASH]     2
-[QSPI_MONITOR]    36
+[QSPI_MONITOR]    28
 [QSPI_RAL_SEQ]     2
 [RNTST]     1
-[SCB]    50
+[SCB]    42
 [TEST_DONE]     1
 [UVM/RELNOTES]     1
 [UVM/REPORT/CATCHER]     1
@@ -923,6 +901,6 @@ $finish called from file "/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP
 $finish at simulation time                 5575
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 5575
-CPU Time:      0.800 seconds;       Data structure size:   0.7Mb
-Mon Nov 23 12:18:44 2026
-CPU time: 19.698 seconds to compile + .610 seconds to elab + 1.142 seconds to link + .874 seconds in simulation
+CPU Time:      0.580 seconds;       Data structure size:   0.7Mb
+Mon Nov 23 15:01:24 2026
+CPU time: 15.588 seconds to compile + .538 seconds to elab + .910 seconds to link + .643 seconds in simulation

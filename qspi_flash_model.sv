@@ -60,16 +60,29 @@ class qspi_flash_model extends uvm_component;
                 	if (vif.csn === 1'b0) begin
                     	read_data = $urandom;
                     	`uvm_info("QSPI_FLASH",$sformatf("Read data = 0x%0h",read_data),UVM_MEDIUM)
-                    	vif.flash_oe = 1'b1;
-                    	for (int i = 7; i >= 0; i--) begin	
-                          @(posedge vif.sclk);
-                        	if (vif.csn !== 1'b0)
-                            	break;
-                        	vif.flash_io = read_data[i*4 +: 4];
-                    	end
+		
+				vif.flash_oe = 1'b1;
+
+				// Drive first nibble before the first data sampling edge
+				vif.flash_io = read_data[31:28];
+
+				for (int i = 7; i >= 0; i--) begin
+  					@(posedge vif.sclk);
+  					if (vif.csn !== 1'b0)
+    						break;
+  					$display("[%0t] FLASH nibble sampled = %h", $time, vif.flash_io);
+
+  					if (i > 0) begin
+    						@(negedge vif.sclk);
+    						vif.flash_io = read_data[(i-1)*4 +: 4];
+  					end
+				end
+
+				// Release the bus after the final sampling edge
+				@(negedge vif.sclk);
+				vif.flash_oe = 1'b0;
+				vif.flash_io = 4'b0000;
 			$display("done -model");
-                    	vif.flash_oe = 1'b0;
-                    	vif.flash_io = 4'b0000;
                 	end
             	end
                 //other read - Fast Read, Read Status Reg 1 (RDSR1), Read JEDEC ID (RDID)
