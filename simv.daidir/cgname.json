@@ -71,18 +71,6 @@
         "module",
         12
     ],
-    "APB_Slave": [
-        "APB_Slave",
-        "v6biS",
-        "module",
-        13
-    ],
-    "AHB_Slave": [
-        "AHB_Slave",
-        "A6I16",
-        "module",
-        14
-    ],
     "async_fifo": [
         "async_fifo",
         "h4Pec",

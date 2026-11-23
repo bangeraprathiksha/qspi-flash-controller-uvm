@@ -99,11 +99,16 @@ class apb_sequence extends uvm_reg_sequence;
         reg_model.data_length.write(status, 9'd4);
 
         // Line width
-        reg_model.line_width.write(status, 8'h44);
+        //reg_model.line_width.write(status, 8'h44);
+	reg_model.line_width.write(status, 8'h2A);
 
         // Start transaction
         reg_model.start.write(status, 1'h1);
 
+
+
+	#5000;
+	
         // Read status register
         reg_model.status.read(status, rdata);
 

@@ -139,5 +139,10 @@ module tb_top;
     run_test("qspi_test");
   end
 
+always @(qspi_if.sclk) begin
+  $display("[%0t] TB: qspi_if.sclk = %b, csn = %b",
+           $time, qspi_if.sclk, qspi_if.csn);
+end
+
 endmodule
 

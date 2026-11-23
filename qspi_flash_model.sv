@@ -29,12 +29,17 @@ class qspi_flash_model extends uvm_component;
         	wait (vif.csn === 1'b0);
 		$display("[%0t] QSPI_FLASH: CSn became LOW",$time);
         	repeat (8) begin
+		$display("check sclk = %0d",vif.sclk);
             	@(posedge vif.sclk);
-            	if (vif.csn !== 1'b0)
+		$display("reached 1");
+            	if (vif.csn !== 1'b0)begin
+			$display("breaking");
                 	break;
+		end
             	opcode = {opcode[6:0], vif.io_0};
+		$display("check opcode = %0d",opcode);
         	end
-            `uvm_info("QSPI_FLASH",$sformatf("opcode = 0x%0h", opcode),UVM_MEDIUM)
+            `uvm_info("QSPI_FLASH",$sformatf("final opcode = 0x%0h", opcode),UVM_MEDIUM)
 
         	case (opcode)
             	// xip read
@@ -42,12 +47,15 @@ class qspi_flash_model extends uvm_component;
 
                   	// address - default (24)
                 	repeat (6) @(posedge vif.sclk);
+			$display("waiting for address");
 
                   	// mode - FF (8 bits)
                 	repeat (2) @(posedge vif.sclk);
+			$display("waiting for mode");
 
                 	// Wait for 4 dummy clock cycles
                 	repeat (4) @(posedge vif.sclk);
+			$display("waiting for dummy");
 
                 	if (vif.csn === 1'b0) begin
                     	read_data = $urandom;
@@ -59,7 +67,7 @@ class qspi_flash_model extends uvm_component;
                             	break;
                         	vif.flash_io = read_data[i*4 +: 4];
                     	end
-
+			$display("done -model");
                     	vif.flash_oe = 1'b0;
                     	vif.flash_io = 4'b0000;
                 	end

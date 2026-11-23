@@ -120,6 +120,7 @@ module QSPI #(
         end
         else begin
             PS <= NS;
+		 $display("SLCK= %0d TIME=%0t | START=%b | PS=%0d | NS=%0d | SRESETn=%b",SCLK,$time, START, PS, NS, SRESETn);
         end
     end
     

@@ -21,9 +21,6 @@ class qspi_monitor extends uvm_monitor;
         forever begin
             @(posedge vif.sclk);
             tr = qspi_seq_item::type_id::create("tr", this);
-		
-           `uvm_info("QSPI_MONITOR",$sformatf("SCLK=%0b CPOL=%0b CPHA=%0b CSN=%0b IO=%b%b%b%b", vif.sclk, tr.cpol, tr.cpha, tr.csn,tr.io_3, tr.io_2, tr.io_1, tr.io_0),UVM_LOW)
-
             tr.sclk  = vif.sclk;
             tr.cpol  = vif.cpol;
             tr.cpha  = vif.cpha;
