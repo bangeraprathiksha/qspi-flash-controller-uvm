@@ -1,3 +1,4 @@
+//`include "defines.svh"
 class qspi_flash_model extends uvm_component;
 
   	`uvm_component_utils(qspi_flash_model)
@@ -60,6 +61,7 @@ class qspi_flash_model extends uvm_component;
                 	if (vif.csn === 1'b0) begin
                     	read_data = $urandom;
                     	`uvm_info("QSPI_FLASH",$sformatf("Read data = 0x%0h",read_data),UVM_MEDIUM)
+                        expected_data_queue.push_back(read_data);
 		
 				vif.flash_oe = 1'b1;
 
@@ -86,6 +88,7 @@ class qspi_flash_model extends uvm_component;
                 	end
             	end
                 //other read - Fast Read, Read Status Reg 1 (RDSR1), Read JEDEC ID (RDID)
+                
 
             	default: begin
                   	`uvm_error("QSPI_FLASH",$sformatf("unsupported opcode = 0x%02h",opcode))
