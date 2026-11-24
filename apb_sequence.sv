@@ -76,7 +76,7 @@ class apb_sequence extends uvm_reg_sequence;
         `uvm_info("QSPI_RAL_SEQ",
                   $sformatf("Status register = %0h", rdata),
                   UVM_MEDIUM)
-
+/*
         // Enable register
         //reg_model.enable_.write(status, 4'hF);
 	reg_model.enable_.write(status, 4'hD);
@@ -116,7 +116,40 @@ class apb_sequence extends uvm_reg_sequence;
         `uvm_info("QSPI_RAL_SEQ",
                   $sformatf("Status register = %0h", rdata),
                   UVM_MEDIUM)
+*/
 
+    // Enable address and data transmit
+    reg_model.enable_.write(status, 4'hA);
+
+    // Opcode register - Page Program
+    reg_model.opcode.write(status, 8'h02);
+
+    // Address length - 3 bytes
+    reg_model.address_length.write(status, 3'h3);
+
+    // Address register
+    reg_model.address.write(status, 32'h00001000);
+
+    // Data length - 4 bytes
+    reg_model.data_length.write(status, 9'd4);
+
+    // Line width - all phases single-line
+    reg_model.line_width.write(status, 8'h00);
+
+    // Data register - write data into TX FIFO
+    reg_model.data.write(status, 32'h12345678);
+
+    // Start transaction
+    reg_model.start.write(status, 1'h1);
+
+    #10000;
+
+    // Read status register
+    reg_model.status.read(status, rdata);
+
+    `uvm_info("QSPI_RAL_SEQ",
+              $sformatf("Status register = %0h", rdata),
+              UVM_MEDIUM)
     endtask
 
 endclass

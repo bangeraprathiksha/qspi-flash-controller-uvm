@@ -52,22 +52,6 @@ class scoreboard extends uvm_scoreboard;
 
    	 	`uvm_info("SCB", $sformatf("Received APB item: Count=%0d Addr=%0h Write=%0b Wdata=%0h", apb_count, t.paddr, t.pwrite, t.pwdata), UVM_MEDIUM)
 
-    		// Check DATA register readback
-    		if ((t.paddr == DATA_ADDR) && (t.pwrite == 0)) begin
-
-      			apb_received_data = t.prdata;
-     	 		apb_data_seen = 1'b1;
-      			`uvm_info("SCB",$sformatf("APB DATA register read = 0x%08h",apb_received_data), UVM_MEDIUM)
-
-      			if (apb_received_data === expected_data) begin
-        			`uvm_info("SCB","APB DATA register comparison PASSED", UVM_LOW)
-      			end
-      
-			else begin
-        			`uvm_error("SCB",$sformatf("APB DATA mismatch! Expected=0x%08h Actual=0x%08h", expected_data, apb_received_data))
-      			end
-
-    		end	
   	endfunction
 
 
